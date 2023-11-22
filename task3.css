@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .start-screen {
+    text-align: center;
+    margin-top: 20vh;
+  }
+  
+  .start-screen h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .player-names {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .player-names input,
+  .player-names button {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  
+  #startBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #startBtn:hover {
+    background-color: #45a049;
+  }
+  
+  .game {
+    display: none;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #555;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .modal-buttons button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button:nth-child(1) {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .modal-buttons button:nth-child(2) {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .modal-buttons button:hover {
+    opacity: 0.8;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
